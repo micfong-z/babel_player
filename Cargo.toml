@@ -1,0 +1,17 @@
+[package]
+name = "babel_player"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+eframe = "0.28.1"
+chrono = { version = "0.4.35", features = ["serde"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_with = { version = "3.9.0", features = ["chrono_0_4"] }
+serde_json = "1.0"
+anyhow = "1.0"
+rfd = "0.15.0"
+amll-lyric = "0.2.4"
+rodio = "0.19.0"
+tokio = { version = "1.36.0", features = ["rt-multi-thread", "sync", "fs", "time"] }
+uuid = { version = "1.7.0", features = ["v4", "serde"] }
